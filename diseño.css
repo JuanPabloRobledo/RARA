@@ -167,6 +167,13 @@ header .logo {
   font-weight: 900;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+
+  .fondo h1 {
+    font-size: 90px;
+  }
+}
+
 @media screen and (max-width: 992px) {
 
   .fondo div {
@@ -230,6 +237,12 @@ header .logo {
   width: 250px;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .firstSection {
+    height: 25rem;
+  }
+}
+
 /* //////radio animacion////// */
 .card {
   position: relative;
@@ -282,6 +295,22 @@ header .logo {
 .card:hover img {
   left: 72%;
   height: 250px;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .card {
+    width: 900px;
+    height: 550px;
+  }
+
+  .card .circle::before {
+    clip-path: circle(140px at center);
+  }
+
+  .card:hover .circle:before {
+    clip-path: circle(600px at center);
+  }
+
 }
 
 /* texto en radio animacion*/
@@ -360,8 +389,51 @@ header .logo {
 
 
 
-/* --------------------- PANTALLA DE CARGA -------------- */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------- PANTALLA DE CARGA -------------- */
 
 @keyframes ldio-2r4186pcb7q {
   0% {
