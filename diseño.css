@@ -239,21 +239,32 @@ header .logo {
 
 /* first section */
 .firstSection {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 70%;
   margin: 0 auto;
   height: 20rem;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .firstSection {
+    width: 60%;
+  }
+}
+
 .firstSection section {
+  margin: 0 auto;
   width: 50%;
   height: 100%;
-  margin: 0 auto;
   text-align: left;
 }
 
+.firstSection .text {
+  position: relative;
+  top: 20%;
+}
+
 .firstSection section div {
-  padding: 5rem;
   color: #fff;
 }
 
@@ -268,21 +279,8 @@ header .logo {
   font-weight: 300;
 }
 
-.sectionImage {
-  background-image: url(img/rara_logo.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  object-fit: cover;
-}
-
-.secondSection {
-  flex-direction: row-reverse;
-}
-
 .cobertura_logo {
   position: relative;
-  left: 30%;
   width: 250px;
 }
 
@@ -498,6 +496,230 @@ header .logo {
   background-color: var(--color-secondary);
 }
 
+
+/* ////////////////////          PAGINA EMISORAS              /////////////////////////////*/
+
+.tituloEmisoras {
+  padding: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tituloEmisoras h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.mapa {
+  width: 25%;
+  margin: 0 auto;
+}
+
+.mapa path {
+  fill: var(--color-primary);
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.mapa :hover {
+  fill: var(--color-secondary);
+}
+
+/* ANIMACION DE QUE ES RARA */
+
+.logo-holder {
+  background: transparent;
+  width: 180px;
+  height: 220px;
+  position: relative;
+  top: 20%;
+  margin: 0 auto;
+  padding-top: 12px;
+  padding-bottom: 24px;
+  -webkit-transform: translateZ(0);
+}
+
+.bar {
+  position: relative;
+  height: 8px;
+  background: #6a6a6a;
+  width: 0%;
+  top: 0px;
+  left: 18px;
+  margin-top: 8px;
+  animation: fill 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill1 {
+  animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill2 {
+  animation: fill-2 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill3 {
+  animation: fill-3 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill4 {
+  animation: fill-4 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill5 {
+  animation: fill-5 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill6 {
+  animation: fill-6 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 30px;
+  }
+
+  66% {
+    width: 10px;
+  }
+
+  100% {
+    width: 105px;
+  }
+}
+
+@keyframes fill-1 {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 50px;
+  }
+
+  66% {
+    width: 20px;
+  }
+
+  100% {
+    width: 130px;
+  }
+}
+
+@keyframes fill-2 {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 90px;
+  }
+
+  66% {
+    width: 70px;
+  }
+
+  100% {
+    width: 136px;
+  }
+}
+
+@keyframes fill-3 {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 50px;
+  }
+
+  66% {
+    width: 24px;
+  }
+
+  100% {
+    width: 109px;
+  }
+}
+
+@keyframes fill-4 {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 98px;
+  }
+
+  66% {
+    width: 34px;
+  }
+
+  100% {
+    width: 99px;
+  }
+}
+
+@keyframes fill-5 {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 30px;
+  }
+
+  66% {
+    width: 10px;
+  }
+
+  100% {
+    width: 148px;
+  }
+}
+
+
+@keyframes fill-6 {
+  0% {
+    width: 0;
+  }
+
+  33% {
+    width: 48px;
+  }
+
+  66% {
+    width: 22px;
+  }
+
+  100% {
+    width: 140px;
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-color: var(--color-primary);
+  }
+
+  50% {
+    background-color: #3a3;
+  }
+
+  100% {
+    background-color: var(--color-secondary);
+  }
+}
 
 
 /* --------------------- PANTALLA DE CARGA -------------- */
