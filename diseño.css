@@ -43,6 +43,7 @@ header.abajo {
 }
 
 header .logo {
+  cursor: pointer;
   max-width: 7rem;
 }
 
