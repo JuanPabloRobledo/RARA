@@ -482,21 +482,120 @@ header .logo {
   color: #000;
 }
 
+@media (min-width: 1920px) and (max-width: 2560px) {
+  .sectionEmisoras p {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .sectionEmisoras a {
+    position: relative;
+    top: 2rem;
+  }
+
+}
+
 /* GRID INFO */
 
 .gridInfo {
   width: 80%;
-  gap: 1rem;
+  gap: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 10rem);
+  grid-template-rows: repeat(2, 7rem);
   margin: 0 auto;
 }
 
 .Info {
-  background-color: var(--color-secondary);
+  display: flex;
 }
 
+.InfoIcons {
+  color: #fff;
+  font-size: 40px;
+  padding: 2rem;
+}
+
+.divInfo {
+  position: relative;
+  top: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.divInfo h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.divInfo p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 10rem;
+  background-color: #333333;
+  width: 100%;
+  height: 50%;
+}
+
+.gridFooter {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  height: 80%;
+}
+
+.navFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.navFooter h1,
+h3,
+ul,
+p {
+  color: #fff;
+}
+
+.navFooter h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: .5rem;
+}
+
+.navFooter p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: .5rem;
+}
+
+.navFooter ul li {
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: .5rem;
+}
+
+.navFooter div {
+  position: relative;
+  top: 20%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.logoFooter {
+  position: relative;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+}
 
 /* ////////////////////          PAGINA EMISORAS              /////////////////////////////*/
 

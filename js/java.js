@@ -21,9 +21,9 @@ window.addEventListener("load", function () {
 
 window.sr = ScrollReveal();
 
-sr.reveal('.', {
-    duration: 3000,
-    origin: 'right',
+sr.reveal('.tituloEmisoras', {
+    duration: 2000,
+    origin: 'left',
     distance: '-500px'
 });
 
