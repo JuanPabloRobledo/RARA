@@ -433,52 +433,70 @@ header .logo {
   }
 }
 
+/* PROVEEDORES */
 
+.gridProveedores {
+  margin-top: 5rem;
+  position: relative;
+  left: 10%;
+  width: 80%;
+  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 20rem);
+}
 
+.proveedores {
+  height: 100%;
+  width: 100%;
+}
 
+/* SECTION EMISORAS*/
+.sectionEmisoras {
+  width: 80%;
+  height: 35%;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.sectionEmisoras h1 {
+  color: #fff;
+  font-size: 40px;
+}
 
+.sectionEmisoras p {
+  padding: 2rem;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
 
+.sectionEmisoras a {
+  padding: 15px 30px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  border-radius: 10px;
+}
 
+.sectionEmisoras a:hover {
+  background-color: #fff;
+  color: #000;
+}
 
+/* GRID INFO */
 
+.gridInfo {
+  width: 80%;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 10rem);
+  margin: 0 auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.Info {
+  background-color: var(--color-secondary);
+}
 
 
 
