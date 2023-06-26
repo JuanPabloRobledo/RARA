@@ -188,6 +188,55 @@ header .logo {
 }
 
 /* --------------body---------------------- */
+/* floats redes */
+.GridFloat {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2rem;
+  position: fixed;
+  left: 1rem;
+  top: 30%;
+}
+
+.grids {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.GridFloat .wsp {
+  background-color: #25D366;
+}
+
+.GridFloat .instagram {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(144deg, rgba(131, 58, 180, 1) 0%, rgba(225, 48, 108, 1) 72%);
+}
+
+.GridFloat .facebook {
+  background-color: #385898;
+}
+
+.GridFloat .linkedin {
+  background-color: #0e76a8;
+}
+
+.grids .bx {
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20%;
+  transition: .3s;
+}
+
+.grids .bx:hover {
+  color: #000;
+}
+
 /* first section */
 .firstSection {
   display: flex;
