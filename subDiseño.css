@@ -210,8 +210,8 @@ header .logo {
 
 /* SLIDER */
 .slider {
-    max-width: 70rem;
-    height: 30rem;
+    max-width: 90rem;
+    height: 35rem;
     margin: 0 auto;
     position: relative;
     /* IN THE END */
@@ -319,8 +319,8 @@ header .logo {
 .testimonial {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    width: 65%;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
     height: 100%;
     position: relative;
 }

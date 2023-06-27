@@ -669,6 +669,7 @@ p {
 }
 
 .mapa :hover {
+  transition: .3s;
   fill: var(--color-secondary);
 }
 
