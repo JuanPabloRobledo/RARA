@@ -142,6 +142,21 @@ header .logo {
 
 /* ---------------BODY--------------------- */
 
+.tituloEmisoras {
+    padding: 5rem;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.tituloEmisoras h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+}
+
 /* floats redes */
 .GridFloat {
     display: grid;
@@ -199,7 +214,6 @@ header .logo {
     height: 30rem;
     margin: 0 auto;
     position: relative;
-    top: 5rem;
     /* IN THE END */
     overflow: hidden;
 }
