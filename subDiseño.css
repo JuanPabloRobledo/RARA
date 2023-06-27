@@ -199,7 +199,7 @@ header .logo {
     height: 30rem;
     margin: 0 auto;
     position: relative;
-
+    top: 5rem;
     /* IN THE END */
     overflow: hidden;
 }
@@ -303,8 +303,30 @@ header .logo {
 
 /* TESTIMONIALS */
 .testimonial {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
     width: 65%;
+    height: 100%;
     position: relative;
+}
+
+.cardsRadios {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.cardsRadios div {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+
+}
+
+.logoRadio {
+    width: 300px;
 }
 
 /* FOOTER */
