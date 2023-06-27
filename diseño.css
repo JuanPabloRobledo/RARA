@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #3564DE;
-  --color-secondary: #B21313;
+  --color-primary: #2661BF;
+  --color-secondary: #D62222;
   --color-tertiary: ;
   --gradient-primary: #0F1218;
 }
@@ -275,7 +275,7 @@ header .logo {
 }
 
 .firstSection section div p {
-  margin-top: 2rem;
+  margin-top: 1rem;
   font-size: 15px;
   font-weight: 300;
 }
@@ -287,7 +287,7 @@ header .logo {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
   .firstSection {
-    height: 25rem;
+    height: 20rem;
   }
 }
 
@@ -542,7 +542,7 @@ footer {
   margin-top: 10rem;
   background-color: #333333;
   width: 100%;
-  height: 50%;
+  height: 55%;
 }
 
 .gridFooter {
@@ -572,6 +572,7 @@ p {
 }
 
 .navFooter p {
+  color: #eee;
   font-size: 15px;
   font-weight: 300;
   margin-top: .5rem;
@@ -590,11 +591,53 @@ p {
   margin: 0 auto;
 }
 
+.navFooter .redes {
+  gap: 1rem;
+  width: 50%;
+  display: flex;
+
+}
+
+.iconsFooter {
+  position: relative;
+  right: 50%;
+  color: #fff;
+  font-size: 25px;
+}
+
+.iconsFooter :hover {
+  transition: .3s;
+  color: var(--color-primary);
+}
+
 .logoFooter {
   position: relative;
   top: 20%;
   left: 20%;
   width: 60%;
+}
+
+.fondoFooter {
+  width: 90%;
+  height: 5rem;
+  border-top: #6666 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.fondoFooter h3 {
+  font-size: 15px;
+}
+
+.fondoFooter a {
+  color: var(--color-primary);
+}
+
+.fondoFooter a:hover {
+  color: #666;
+  transition: .3s;
 }
 
 /* ////////////////////          PAGINA EMISORAS              /////////////////////////////*/
@@ -612,6 +655,8 @@ p {
   font-weight: 900;
 }
 
+/* MAPA */
+
 .mapa {
   width: 25%;
   margin: 0 auto;
@@ -626,6 +671,62 @@ p {
 .mapa :hover {
   fill: var(--color-secondary);
 }
+
+.mapa a {
+  cursor: pointer;
+}
+
+/* MODAL */
+
+/* .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .9s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+}
+
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+  --transform: translateY(0);
+  --transition: transform .8s .8s;
+}
+
+.modal__container {
+  margin: auto;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+}
+
+.modal__close {
+  font-size: 50px;
+  color: #000;
+  padding: 5px;
+}
+
+.modal__close:hover {
+  transition: .3s;
+  color: var(--color-secondary);
+} */
 
 /* ANIMACION DE QUE ES RARA */
 
@@ -660,11 +761,9 @@ p {
   animation: fill-2 5s infinite alternate, colors 5s infinite alternate;
 }
 
-
 .bar.fill3 {
   animation: fill-3 5s infinite alternate, colors 5s infinite alternate;
 }
-
 
 .bar.fill4 {
   animation: fill-4 5s infinite alternate, colors 5s infinite alternate;
@@ -677,8 +776,6 @@ p {
 .bar.fill6 {
   animation: fill-6 5s infinite alternate, colors 5s infinite alternate;
 }
-
-
 
 @keyframes fill {
   0% {
@@ -813,14 +910,13 @@ p {
   }
 
   50% {
-    background-color: #3a3;
+    background-color: var(--color-secondary);
   }
 
   100% {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
   }
 }
-
 
 /* --------------------- PANTALLA DE CARGA -------------- */
 

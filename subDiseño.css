@@ -1,0 +1,328 @@
+:root {
+    --color-primary: #2661BF;
+    --color-secondary: #D62222;
+    --color-tertiary: ;
+    --gradient-primary: #0F1218;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100%;
+    height: 100vh;
+    background-color: var(--gradient-primary);
+}
+
+header {
+    z-index: 20;
+    margin: 0 auto;
+    position: fixed;
+    width: 80%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: transparent;
+}
+
+header.abajo {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: #000;
+    transition: 1s all;
+    z-index: 20;
+}
+
+header .logo {
+    cursor: pointer;
+    max-width: 7rem;
+}
+
+.nav-list {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list li a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list li a:hover {
+    color: var(--color-secondary);
+}
+
+.nav-list li a:active {
+    color: var(--color-secondary);
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        width: 100%;
+        left: 0%;
+    }
+
+    header.abajo {
+        margin-top: 0rem;
+    }
+
+    .logo {
+        max-width: 10rem;
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 50px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #fff;
+        font-size: 50px;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        width: 30vh;
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        z-index: 20;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        font-size: 20px;
+        color: #ecececec;
+    }
+}
+
+/* ---------------BODY--------------------- */
+
+/* floats redes */
+.GridFloat {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2rem;
+    position: fixed;
+    left: 1rem;
+    top: 30%;
+}
+
+.grids {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.GridFloat .wsp {
+    background-color: #25D366;
+}
+
+.GridFloat .instagram {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(144deg, rgba(131, 58, 180, 1) 0%, rgba(225, 48, 108, 1) 72%);
+}
+
+.GridFloat .facebook {
+    background-color: #385898;
+}
+
+.GridFloat .linkedin {
+    background-color: #0e76a8;
+}
+
+.grids .bx {
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+    transition: .3s;
+}
+
+.grids .bx:hover {
+    color: #666;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 10rem;
+    background-color: #333333;
+    width: 100%;
+    height: 50%;
+}
+
+.gridFooter {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    height: 80%;
+}
+
+.navFooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.navFooter h1,
+h3,
+ul,
+p {
+    color: #fff;
+}
+
+.navFooter h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+.navFooter p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: .5rem;
+}
+
+.navFooter ul li {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: .5rem;
+}
+
+.navFooter div {
+    position: relative;
+    top: 20%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.navFooter .redes {
+    gap: 1rem;
+    width: 50%;
+    display: flex;
+
+}
+
+.iconsFooter {
+    position: relative;
+    right: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+.iconsFooter :hover {
+    transition: .3s;
+    color: var(--color-primary);
+}
+
+.logoFooter {
+    position: relative;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+}
+
+.fondoFooter {
+    width: 90%;
+    height: 5rem;
+    border-top: #6666 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.fondoFooter h3 {
+    font-size: 15px;
+}
+
+.fondoFooter a {
+    color: var(--color-primary);
+}
+
+.fondoFooter a:hover {
+    color: #666;
+    transition: .3s;
+}
+
+
+/* PAGINA BUENOS AIRES */
+.tituloProvincia {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40%;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.fondoBsAs {
+    background-image: url(img/FONDOS_PROVINCIAS/BS_AS/Buenos_Aires.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoCABA {
+    background-image: url(img/FONDOS_PROVINCIAS/CABA/CABA.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
