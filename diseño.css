@@ -166,6 +166,7 @@ header .logo {
   color: #fff;
   font-size: 70px;
   font-weight: 900;
+  right: 35%;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
@@ -238,6 +239,18 @@ header .logo {
   color: #000;
 }
 
+@media (max-width: 991px) {
+  .grids {
+    width: 80px;
+    height: 80px;
+  }
+
+  .grids .bx {
+    font-size: 50px;
+    top: 20%;
+  }
+}
+
 /* first section */
 .firstSection {
   display: grid;
@@ -245,12 +258,6 @@ header .logo {
   width: 70%;
   margin: 0 auto;
   height: 20rem;
-}
-
-@media (min-width: 1920px) and (max-width: 2560px) {
-  .firstSection {
-    width: 60%;
-  }
 }
 
 .firstSection section {
@@ -287,7 +294,32 @@ header .logo {
 
 @media (min-width: 1920px) and (max-width: 2560px) {
   .firstSection {
+    width: 60%;
     height: 20rem;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .firstSection {
+    width: 80%;
+    height: 25rem;
+  }
+
+  .firstSection section {
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .firstSection section div p {
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .cobertura_logo {
+    position: relative;
+    width: 270px;
   }
 }
 
@@ -405,12 +437,12 @@ header .logo {
 @media (max-width: 991px) {
   .card {
     width: auto;
-    max-width: 350px;
+    max-width: 550px;
     align-items: flex-start;
   }
 
   .card:hover {
-    height: 600px;
+    height: 800px;
   }
 
   .card .contentt {
@@ -420,10 +452,31 @@ header .logo {
   }
 
   .card:hover img {
-    top: 70%;
+    top: 80%;
     left: 50%;
-    height: 300px;
+    height: 250px;
   }
+
+  /* texto en radio animacion*/
+  .card .content {
+    width: 100%;
+    padding: 10rem 5rem 5rem 5rem;
+  }
+
+  .card .content h2 {
+    margin-bottom: 1rem;
+  }
+
+  .card .content p {
+    font-size: 15px;
+  }
+
+  .card .content a {
+    padding: 20px 40px;
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+
 }
 
 @media (max-width:420px) {
@@ -448,6 +501,17 @@ header .logo {
 .proveedores {
   height: 100%;
   width: 100%;
+}
+
+.imgProveedor {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .gridProveedores {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 15rem);
+  }
 }
 
 /* SECTION EMISORAS*/
@@ -495,6 +559,29 @@ header .logo {
 
 }
 
+@media screen and (max-width: 992px) {
+  .sectionEmisoras {
+    height: 50%;
+    margin-top: 10rem;
+  }
+
+  .sectionEmisoras h1 {
+    font-size: 60px;
+  }
+
+  .sectionEmisoras p {
+    padding: 4rem;
+    font-size: 25px;
+  }
+
+  .sectionEmisoras a {
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+}
+
 /* GRID INFO */
 
 .gridInfo {
@@ -535,6 +622,30 @@ header .logo {
   font-size: 14px;
   font-weight: 300;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 992px) {
+
+  .gridInfo {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .InfoIcons {
+    font-size: 40px;
+  }
+
+  .divInfo {
+    top: 1rem;
+  }
+
+  .divInfo h2 {
+    font-size: 25px;
+  }
+
+  .divInfo p {
+    font-size: 18px;
+  }
 }
 
 /* FOOTER */
@@ -638,6 +749,41 @@ p {
 .fondoFooter a:hover {
   color: #666;
   transition: .3s;
+}
+
+@media screen and (max-width: 992px) {
+
+  footer {
+    height: 60%;
+  }
+
+  .gridFooter {
+    gap: 0rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 80%;
+  }
+
+  .navFooter h3 {
+    font-size: 25px;
+  }
+
+  .navFooter p {
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+
+  .navFooter ul li {
+    margin-top: 1rem;
+  }
+
+  .iconsFooter {
+    font-size: 30px;
+  }
+
+  .fondoFooter h3 {
+    font-size: 18px;
+  }
 }
 
 /* ////////////////////          PAGINA EMISORAS              /////////////////////////////*/
@@ -1011,7 +1157,7 @@ p {
   left: 0;
   z-index: 100000;
   clip-path: circle(150% at 100% 0);
-  transition: clip-path 4s ease-in-out;
+  transition: clip-path 3s ease-in-out;
 }
 
 .loader2 {
