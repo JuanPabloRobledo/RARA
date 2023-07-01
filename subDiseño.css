@@ -210,7 +210,7 @@ header .logo {
 
 /* SLIDER */
 .slider {
-    max-width: 85rem;
+    max-width: 100rem;
     height: 35rem;
     margin: 0 auto;
     position: relative;

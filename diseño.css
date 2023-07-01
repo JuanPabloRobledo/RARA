@@ -81,6 +81,7 @@ header .logo {
 
   header.abajo {
     margin-top: 0rem;
+    border-radius: 0;
   }
 
   .logo {
@@ -255,21 +256,23 @@ header .logo {
 .firstSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   height: 20rem;
+  gap: 2rem;
 }
 
 .firstSection section {
   margin: 0 auto;
-  width: 50%;
+  width: 90%;
   height: 100%;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .firstSection .text {
   position: relative;
-  top: 20%;
 }
 
 .firstSection section div {
@@ -281,15 +284,21 @@ header .logo {
   font-size: 30px;
 }
 
-.firstSection section div p {
-  margin-top: 1rem;
+.firstSection section div p,
+li {
+  margin-top: .5rem;
   font-size: 15px;
   font-weight: 300;
 }
 
-.cobertura_logo {
-  position: relative;
-  width: 250px;
+.firstSection section div span {
+  font-weight: 600;
+  color: #fff;
+}
+
+.img_cobertura {
+  width: 50%;
+  margin: 0 auto;
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
@@ -434,6 +443,11 @@ header .logo {
   font-size: 15px;
 }
 
+.card .content a:hover {
+  background-color: #fff;
+  color: var(--color-secondary);
+}
+
 @media (max-width: 991px) {
   .card {
     width: auto;
@@ -536,6 +550,7 @@ header .logo {
 
 .sectionEmisoras a {
   padding: 15px 30px;
+  font-weight: 500;
   background-color: var(--color-secondary);
   color: #fff;
   border-radius: 10px;
@@ -543,7 +558,7 @@ header .logo {
 
 .sectionEmisoras a:hover {
   background-color: #fff;
-  color: #000;
+  color: var(--color-secondary);
 }
 
 @media (min-width: 1920px) and (max-width: 2560px) {
@@ -882,7 +897,6 @@ p {
   width: 180px;
   height: 220px;
   position: relative;
-  top: 20%;
   margin: 0 auto;
   padding-top: 12px;
   padding-bottom: 24px;
@@ -891,7 +905,7 @@ p {
 
 .bar {
   position: relative;
-  height: 8px;
+  height: 12px;
   background: #6a6a6a;
   width: 0%;
   top: 0px;
