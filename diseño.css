@@ -531,6 +531,8 @@ li {
 
 /* SECTION EMISORAS*/
 .sectionEmisoras {
+  position: relative;
+  top: 10%;
   width: 80%;
   height: 35%;
   margin: 0 auto;
@@ -634,7 +636,7 @@ li {
 }
 
 .divInfo p {
-  color: #fff;
+  color: rgb(211, 211, 211);
   font-size: 14px;
   font-weight: 300;
   margin-top: 10px;
