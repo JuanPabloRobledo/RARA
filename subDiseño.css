@@ -266,6 +266,12 @@ header .logo {
     cursor: pointer;
 }
 
+.slider__btn:hover,
+.slider__btn2:hover {
+    transition: .4s;
+    background-color: var(--color-secondary);
+}
+
 .slider__btn--left {
     left: 6%;
     transform: translate(-50%, -50%);
@@ -313,7 +319,7 @@ header .logo {
     gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     width: 70%;
-    height: 100%;
+    height: 70%;
     position: relative;
 }
 
@@ -332,13 +338,19 @@ header .logo {
 }
 
 .cardsRadios h1 {
+    border-radius: 1rem;
+    padding: 10px;
+    width: 10rem;
+    background-color: rgb(0, 49, 83);
     text-align: center;
+    margin: 0 auto;
     color: #fff;
-    font-size: 20px;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .logoRadio {
-    width: 300px;
+    width: 100%;
 }
 
 /* SLIDER */
