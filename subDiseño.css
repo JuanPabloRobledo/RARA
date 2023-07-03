@@ -160,6 +160,7 @@ header .logo {
 
 /* floats redes */
 .GridFloat {
+    z-index: 100;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     gap: 2rem;
@@ -328,6 +329,12 @@ header .logo {
     position: relative;
     top: 10%;
 
+}
+
+.cardsRadios h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
 }
 
 .logoRadio {
@@ -546,8 +553,11 @@ p {
     margin: 0 auto;
 }
 
+
 .fondoFooter h3 {
-    font-size: 15px;
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
 }
 
 .fondoFooter a {

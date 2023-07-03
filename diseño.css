@@ -759,7 +759,9 @@ p {
 }
 
 .fondoFooter h3 {
-  font-size: 15px;
+  font-size: 13px;
+  color: #999;
+  font-weight: 400;
 }
 
 .fondoFooter a {
