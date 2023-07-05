@@ -614,3 +614,33 @@ p {
     background-size: cover;
     object-fit: cover;
 }
+
+.fondoFormosa {
+    background-image: url(img/FONDOS_PROVINCIAS/FORMOSA/formosa.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoSanjuan {
+    background-image: url(img/FONDOS_PROVINCIAS/SANJUAN/san\ juan.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoPampa {
+    background-image: url(img/FONDOS_PROVINCIAS/LAPAMPA/la\ pampa.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
