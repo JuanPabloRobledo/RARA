@@ -644,3 +644,23 @@ p {
     background-size: cover;
     object-fit: cover;
 }
+
+.fondoSantafe {
+    background-image: url(img/FONDOS_PROVINCIAS/SANTAFE/fondo.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoSantiagodelestero {
+    background-image: url(img/FONDOS_PROVINCIAS/SANTIAGODELESTERO/fondo.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
