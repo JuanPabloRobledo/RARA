@@ -664,3 +664,133 @@ p {
     background-size: cover;
     object-fit: cover;
 }
+
+.fondoRionegro {
+    background-image: url(img/FONDOS_PROVINCIAS/RIONEGRO/FONDO.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoChubut {
+    background-image: url(img/FONDOS_PROVINCIAS/CHUBUT/Chubut-Argentina.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoChaco {
+    background-image: url(img/FONDOS_PROVINCIAS/CHACO/chaco.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoLarioja {
+    background-image: url(img/FONDOS_PROVINCIAS/LARIOJA/FONDO.jpeg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoEntrerios {
+    background-image: url(img/FONDOS_PROVINCIAS/ENTRERIOS/fondo.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoJujuy {
+    background-image: url(img/FONDOS_PROVINCIAS/JUJUY/Jujuy_01.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoNeuquen {
+    background-image: url(img/FONDOS_PROVINCIAS/NEUQUEN/fondo.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoCatamarca {
+    background-image: url(img/FONDOS_PROVINCIAS/CATAMARCA/catamarca.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoCordoba {
+    background-image: url(img/FONDOS_PROVINCIAS/CORDOBA/cordoba.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoTucuman {
+    background-image: url(img/FONDOS_PROVINCIAS/TUCUMAN/tucuman.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoSanluis {
+    background-image: url(img/FONDOS_PROVINCIAS/SANLUIS/san\ luis.png);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoCorrientes {
+    background-image: url(img/FONDOS_PROVINCIAS/CORRIENTES/CORRIENTESFONDO.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.fondoSalta {
+    background-image: url(img/FONDOS_PROVINCIAS/SALTA/FONDO.PNG);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
