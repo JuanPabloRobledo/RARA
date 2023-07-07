@@ -591,8 +591,10 @@ p {
     position: relative;
     top: 40%;
     color: #fff;
-    font-size: 80px;
-    font-weight: 900;
+    font-size: 120px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3rem;
 }
 
 .fondoBsAs {
