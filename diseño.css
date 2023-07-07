@@ -38,7 +38,7 @@ header {
 header.abajo {
   margin-top: 1rem;
   border-radius: 1rem;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .8);
   transition: 1s all;
   z-index: 20;
 }
