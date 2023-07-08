@@ -819,6 +819,10 @@ p {
   cursor: pointer;
 }
 
+.mapa2 {
+  width: 5rem;
+}
+
 /* MODAL */
 
 /* .modal {
@@ -908,7 +912,7 @@ p {
 .fondoNosotros {
   width: 100%;
   height: 50%;
-  background-image: url(img/fondo2.jpg);
+  background-image: url(img/equipo-sala-grabacion-musical-vacia.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
