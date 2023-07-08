@@ -154,41 +154,9 @@ header .logo {
   object-fit: cover;
 }
 
-.fondo div {
-  z-index: 5;
-  display: flex;
-  position: relative;
-  float: right;
-  width: 30%;
-  height: 100%;
-}
-
-.fondo h1 {
-  position: relative;
-  top: 30%;
-  color: #fff;
-  font-size: 70px;
-  font-weight: 900;
-  right: 35%;
-}
-
-@media (min-width: 1920px) and (max-width: 2560px) {
-
-  .fondo h1 {
-    font-size: 90px;
-  }
-}
-
 @media screen and (max-width: 992px) {
-
-  .fondo div {
-    float: none;
-    margin: 0 auto;
-  }
-
-  .fondo h1 {
-    top: 30%;
-    font-size: 90px;
+  .fondo {
+    background-position: 70%;
   }
 }
 
@@ -288,6 +256,7 @@ header .logo {
 
 .firstSection section div p,
 li {
+  color: #fff;
   margin-top: .5rem;
   font-size: 15px;
   font-weight: 300;
@@ -711,6 +680,7 @@ p {
 }
 
 .navFooter ul li {
+  color: #eee;
   font-size: 13px;
   font-weight: 300;
   margin-top: .5rem;
@@ -906,6 +876,33 @@ p {
   background-color: #fff;
 }
 
+.tituloNosotros {
+  text-align: center;
+  padding: 5rem;
+}
+
+.tituloNosotros h1 {
+  letter-spacing: .5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 30px;
+}
+
+.tituloNosotros h2 {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.tituloNosotros p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+  width: 80%;
+  margin: 0 auto;
+}
 
 /* fondo principal */
 .fondoNosotros {
@@ -959,10 +956,91 @@ p {
 
 
 
+/* first section */
+.firstNosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0 auto;
+  height: 30rem;
+}
 
+.firstNosotros section {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.firstNosotros section div {
+  color: #000;
+  width: 50%;
+}
 
+.firstNosotros section div h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  font-size: 25px;
+}
 
+.firstNosotros section div p,
+li {
+  margin-top: .5rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.section1 {
+  width: 100%;
+  background-image: url(img/vista-frontal-mujer-espacio-copia.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.section2 {
+  background-color: #222222;
+}
+
+/* SECOND FIRST*/
+.firstNosotros2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0 auto;
+  height: 30rem;
+}
+
+.firstNosotros2 section {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstNosotros2 section div {
+  width: 50%;
+}
+
+.firstNosotros2 section div h1 {
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.firstNosotros2 section div p,
+li {
+  margin-top: .5rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
 
 
 
