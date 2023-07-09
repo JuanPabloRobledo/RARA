@@ -406,15 +406,14 @@ li {
   position: relative;
   color: #fff;
   padding: 15px 40px;
-  border-radius: 5px;
   font-size: 13px;
   background-color: var(--color-secondary);
   margin-top: 10px;
   display: inline-block;
-  font-weight: 700;
 }
 
 .card .content a:hover {
+  transition: .6s;
   background-color: #fff;
   color: var(--color-secondary);
 }
@@ -523,15 +522,14 @@ li {
 
 .sectionEmisoras a {
   padding: 15px 40px;
-  border-radius: 5px;
   font-size: 13px;
-  font-weight: 500;
   background-color: var(--color-secondary);
   color: #fff;
 }
 
 .sectionEmisoras a:hover {
   background-color: #fff;
+  transition: .6s;
   color: var(--color-secondary);
 }
 
@@ -1078,49 +1076,28 @@ li {
 
 /* ////////////////////          PAGINA CONTACTO              /////////////////////////////*/
 
-.section_contact {
-  display: flex;
-  height: 100vh;
-}
-
-.sectionsInContact {
+.divForm {
   width: 100%;
 }
 
-.sectionsInContact h1 {
-  text-align: left;
-  padding: 30px;
-  font-size: 30px;
-  font-weight: 700;
+.divForm h1 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
   color: #000;
-  margin-top: 2rem;
-  margin-bottom: 0rem;
-}
-
-.datos {
-  border-bottom: 2px solid rgb(112, 128, 144, .1);
-  margin-top: 3rem;
-  width: 50%;
-}
-
-.datosGeneral {
-  display: flex;
-  width: 100%;
-}
-
-.logo_division {
-  position: relative;
-  left: 41%;
+  margin-bottom: 3rem;
 }
 
 form {
-  width: 700px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   margin: 0 auto;
 }
 
 input,
 textarea {
-  border-bottom: 1px solid rgb(112, 128, 144, .5);
   margin: 10px;
   padding: 15px;
   font-size: 13px;
@@ -1128,29 +1105,31 @@ textarea {
 }
 
 input[type="submit"] {
-  margin-left: 3rem;
+  margin: 0 auto;
+  position: relative;
+  top: 3rem;
   border: none;
   width: 12rem;
   color: #fff;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
 }
 
 input[type="submit"]:hover {
   background-color: #fff;
-  color: var(--color-primary);
+  color: var(--color-secondary);
   transition: .6s;
   cursor: pointer;
 }
 
 input {
-  width: 500px;
+  width: 100%;
 }
 
 textarea {
   min-height: 100px;
   max-height: 200px;
-  min-width: 500px;
-  max-width: 500px;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 
