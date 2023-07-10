@@ -250,6 +250,7 @@ header .logo {
 }
 
 .firstSection section div h1 {
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 30px;
 }
