@@ -255,16 +255,16 @@ header .logo {
 }
 
 .firstSection section div p,
-li {
+.firstSection section div li {
   color: #fff;
   margin-top: .5rem;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .firstSection section div span {
-  font-weight: 600;
-  color: #fff;
+  font-weight: 900;
+  color: rgb(211, 211, 211);
 }
 
 .img_cobertura {
@@ -294,7 +294,6 @@ li {
   .firstSection section div p {
     margin-top: 1rem;
     font-size: 18px;
-    font-weight: 300;
   }
 
   .cobertura_logo {
@@ -398,8 +397,9 @@ li {
 }
 
 .card .content p {
-  color: #fff;
+  color: rgb(211, 211, 211);
   font-size: 15px;
+  font-weight: 500;
 }
 
 .card .content a {
@@ -515,9 +515,9 @@ li {
 
 .sectionEmisoras p {
   padding: 2rem;
-  color: #fff;
+  color: rgb(211, 211, 211);
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .sectionEmisoras a {
@@ -607,7 +607,7 @@ li {
 .divInfo p {
   color: rgb(211, 211, 211);
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 10px;
 }
 
