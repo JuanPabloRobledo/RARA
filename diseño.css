@@ -1281,6 +1281,7 @@ textarea {
     padding: 30px;
     font-size: 35px;
     color: #333;
+    border: 1px solid #333;
   }
 
   input[type="submit"] {
