@@ -962,6 +962,25 @@ p {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 992px) {
+
+  .tituloNosotros h1 {
+    font-size: 70px;
+  }
+
+  .tituloNosotros h2 {
+    margin-bottom: 2rem;
+    font-size: 40px;
+  }
+
+  .tituloNosotros p {
+    margin-bottom: 3rem;
+    font-weight: 300;
+    font-size: 35px;
+    width: 90%;
+  }
+}
+
 /* fondo principal */
 .fondoNosotros {
   width: 100%;
@@ -1126,6 +1145,60 @@ li {
 }
 
 
+@media screen and (max-width: 992px) {
+
+  .firstNosotros {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100rem;
+  }
+
+  .firstNosotros2 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100rem;
+
+  }
+
+  .firstNosotros2 section:nth-of-type(1) {
+    order: 2;
+  }
+
+  .firstNosotros section div {
+    width: 80%;
+  }
+
+  .firstNosotros section div h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+  }
+
+  .firstNosotros section div p,
+  li {
+    font-size: 35px;
+  }
+
+
+  .firstNosotros2 section div {
+    width: 80%;
+  }
+
+  .firstNosotros2 section div h1 {
+    font-size: 50px;
+  }
+
+  .firstNosotros2 section div h2 {
+    font-size: 45px;
+  }
+
+  .firstNosotros2 section div p,
+  li {
+    margin-top: .5rem;
+    font-size: 35px;
+  }
+
+
+}
 
 
 
