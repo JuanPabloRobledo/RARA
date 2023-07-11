@@ -57,16 +57,13 @@ header .logo {
 }
 
 .nav-list li a {
-  font-weight: 700;
+  font-weight: 500;
+  font-size: 18px;
   text-decoration: none;
   color: #fff;
 }
 
 .nav-list li a:hover {
-  color: var(--color-secondary);
-}
-
-.nav-list li a:active {
   color: var(--color-secondary);
 }
 
@@ -517,8 +514,8 @@ header .logo {
 }
 
 .proveedores {
-  height: 100%;
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .imgProveedor {
@@ -529,6 +526,16 @@ header .logo {
   .gridProveedores {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
+  }
+
+  .proveedores {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .imgProveedor {
+    margin-top: 10rem;
+    width: 100%;
   }
 }
 
@@ -612,7 +619,9 @@ header .logo {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 7rem);
-  margin: 0 auto;
+  position: relative;
+  left: 10%;
+  margin-bottom: 10rem;
 }
 
 .Info {
@@ -672,7 +681,6 @@ header .logo {
 
 /* FOOTER */
 footer {
-  margin-top: 10rem;
   background-color: #333333;
   width: 100%;
   height: 55%;
@@ -942,6 +950,10 @@ p {
 }
 
 .tituloNosotros {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   padding: 5rem;
 }
@@ -971,6 +983,7 @@ p {
 
 @media screen and (max-width: 992px) {
   .tituloNosotros {
+    height: 70rem;
     padding: 7rem;
   }
 
@@ -1215,6 +1228,24 @@ li {
 
 .divForm {
   width: 100%;
+  margin-bottom: 10rem;
+}
+
+
+.tituloContacto {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem;
+}
+
+.tituloContacto h1 {
+  letter-spacing: .5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 40px;
 }
 
 .divForm h1 {
@@ -1270,6 +1301,10 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
+  .tituloContacto h1 {
+    font-size: 50px;
+  }
+
   .divForm h1 {
     font-size: 45px;
     padding: 1rem;
@@ -1318,14 +1353,6 @@ textarea {
     max-width: 100%;
   }
 }
-
-
-
-
-
-
-
-
 
 /* ANIMACION DE QUE ES RARA */
 
