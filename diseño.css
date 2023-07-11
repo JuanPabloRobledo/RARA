@@ -138,7 +138,7 @@ header .logo {
   }
 
   .nav-list li a {
-    font-size: 40px;
+    font-size: 50px;
     color: #ecececec;
   }
 }
@@ -212,12 +212,12 @@ header .logo {
 
 @media (max-width: 991px) {
   .grids {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   .grids .bx {
-    font-size: 60px;
+    font-size: 70px;
     top: 25%;
   }
 }
@@ -285,28 +285,43 @@ header .logo {
   .firstSection {
     grid-template-columns: repeat(1, 1fr);
     width: 80%;
-    height: 60rem;
+    height: 80rem;
     gap: 2rem;
   }
 
   .firstSection section {
+    position: relative;
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
   }
 
   .firstSection section div h1 {
-    font-size: 40px;
+    font-size: 70px;
+  }
+
+  .mov1 {
+    position: relative;
+    top: 20%;
+  }
+
+  .mov2 {
+    position: relative;
+    bottom: 20%;
+  }
+
+  .img_cobertura {
+    position: relative;
+    bottom: 30%;
   }
 
   .firstSection section div p,
   .firstSection section div li {
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: 400;
   }
 
-
-  .cobertura_logo {
-    position: relative;
-    width: 270px;
+  .firstSection section div span {
+    color: var(--color-primary);
   }
 }
 
@@ -429,12 +444,12 @@ header .logo {
 @media (max-width: 991px) {
   .card {
     width: auto;
-    max-width: 550px;
+    max-width: 700px;
     align-items: flex-start;
   }
 
   .card:hover {
-    height: 800px;
+    height: 1500px;
   }
 
   .card .contentt {
@@ -443,10 +458,24 @@ header .logo {
     padding: 30px;
   }
 
+  .card img {
+    top: 50%;
+    height: 300px;
+  }
+
   .card:hover img {
     top: 80%;
     left: 50%;
-    height: 250px;
+    height: 400px;
+  }
+
+  .card .circle::before {
+    clip-path: circle(200px at center);
+    transition: .7s;
+  }
+
+  .card:hover .circle:before {
+    clip-path: circle(1000px at center);
   }
 
   /* texto en radio animacion*/
@@ -456,26 +485,22 @@ header .logo {
   }
 
   .card .content h2 {
+    font-size: 60px;
     margin-bottom: 1rem;
   }
 
   .card .content p {
-    font-size: 15px;
+    font-size: 35px;
   }
 
   .card .content a {
     padding: 20px 40px;
-    margin-top: 1rem;
-    font-size: 18px;
+    margin-top: 2rem;
+    font-size: 30px;
   }
 
 }
 
-@media (max-width:420px) {
-  .card .content {
-    padding: 20px;
-  }
-}
 
 /* PROVEEDORES */
 
@@ -501,8 +526,8 @@ header .logo {
 
 @media screen and (max-width: 992px) {
   .gridProveedores {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 15rem);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 
@@ -556,23 +581,24 @@ header .logo {
 
 @media screen and (max-width: 992px) {
   .sectionEmisoras {
-    height: 50%;
-    margin-top: 10rem;
+    height: 40%;
+    margin-top: 5rem;
   }
 
   .sectionEmisoras h1 {
-    font-size: 60px;
+    font-size: 70px;
   }
 
   .sectionEmisoras p {
+    color: #fff;
+    font-weight: 400;
     padding: 4rem;
-    font-size: 25px;
+    font-size: 35px;
   }
 
   .sectionEmisoras a {
     padding: 20px 40px;
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 35px;
   }
 
 }
@@ -1171,6 +1197,19 @@ textarea {
   left: 18px;
   margin-top: 8px;
   animation: fill 5s infinite alternate, colors 5s infinite alternate;
+}
+
+@media screen and (max-width: 992px) {
+  .logo-holder {
+    visibility: hidden;
+    width: 300px;
+    height: 220px;
+  }
+
+  .bar {
+    height: 23px;
+  }
+
 }
 
 .bar.fill1 {
