@@ -787,7 +787,7 @@ p {
   .gridFooter {
     gap: 0rem;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(3rem, 30rem, 30rem, 30rem, 30rem);
     height: 80%;
   }
 
@@ -798,7 +798,7 @@ p {
 
   .navFooter p,
   .navFooter ul li {
-    font-size: 35px;
+    font-size: 40px;
     margin-top: 1rem;
   }
 
@@ -833,6 +833,14 @@ p {
   letter-spacing: .5rem;
 }
 
+@media screen and (max-width: 992px) {
+  .tituloEmisoras h1 {
+    position: relative;
+    top: 10rem;
+    font-size: 80px;
+  }
+}
+
 /* MAPA */
 
 .mapa {
@@ -857,6 +865,16 @@ p {
 
 .mapa2 {
   width: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .mapa {
+    width: 80%;
+    position: relative;
+    top: 20rem;
+    height: 100vh;
+  }
+
 }
 
 /* MODAL */
