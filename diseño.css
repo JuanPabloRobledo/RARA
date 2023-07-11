@@ -86,22 +86,22 @@ header .logo {
     border-radius: 0;
   }
 
-  .logo {
-    max-width: 10rem;
+  header .logo {
+    max-width: 15rem;
   }
 
   .abrir-menu,
   .cerrar-menu {
     display: block;
     border: 0;
-    font-size: 50px;
+    font-size: 80px;
     background-color: transparent;
     cursor: pointer;
   }
 
   .abrir-menu {
     color: #fff;
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .cerrar-menu {
@@ -138,7 +138,7 @@ header .logo {
   }
 
   .nav-list li a {
-    font-size: 20px;
+    font-size: 40px;
     color: #ecececec;
   }
 }
@@ -212,13 +212,13 @@ header .logo {
 
 @media (max-width: 991px) {
   .grids {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   .grids .bx {
-    font-size: 50px;
-    top: 20%;
+    font-size: 60px;
+    top: 25%;
   }
 }
 
@@ -283,8 +283,10 @@ header .logo {
 @media (max-width: 991px) {
 
   .firstSection {
+    grid-template-columns: repeat(1, 1fr);
     width: 80%;
-    height: 25rem;
+    height: 60rem;
+    gap: 2rem;
   }
 
   .firstSection section {
@@ -292,10 +294,15 @@ header .logo {
     width: 70%;
   }
 
-  .firstSection section div p {
-    margin-top: 1rem;
-    font-size: 18px;
+  .firstSection section div h1 {
+    font-size: 40px;
   }
+
+  .firstSection section div p,
+  .firstSection section div li {
+    font-size: 25px;
+  }
+
 
   .cobertura_logo {
     position: relative;
