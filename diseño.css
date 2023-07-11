@@ -720,7 +720,8 @@ p {
   margin-top: .5rem;
 }
 
-.navFooter ul li {
+.navFooter ul li,
+.navFooter ul li a {
   color: #eee;
   font-size: 13px;
   font-weight: 300;
@@ -764,7 +765,7 @@ p {
 .fondoFooter {
   width: 90%;
   height: 5rem;
-  border-top: #6666 1px solid;
+  border-top: #666 1px solid;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -805,7 +806,7 @@ p {
   }
 
   .navFooter p,
-  .navFooter ul li {
+  .navFooter ul li a {
     color: rgb(211, 211, 211);
     font-size: 35px;
     font-weight: 400;
