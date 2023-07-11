@@ -164,6 +164,7 @@ header .logo {
 /* floats redes */
 .GridFloat {
   display: grid;
+  z-index: 100000;
   grid-template-rows: repeat(4, 1fr);
   gap: 2rem;
   position: fixed;
@@ -648,12 +649,12 @@ header .logo {
 @media screen and (max-width: 992px) {
 
   .gridInfo {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
 
   .InfoIcons {
-    font-size: 40px;
+    font-size: 70px;
   }
 
   .divInfo {
@@ -661,11 +662,11 @@ header .logo {
   }
 
   .divInfo h2 {
-    font-size: 25px;
+    font-size: 50px;
   }
 
   .divInfo p {
-    font-size: 18px;
+    font-size: 30px;
   }
 }
 
@@ -780,35 +781,38 @@ p {
 @media screen and (max-width: 992px) {
 
   footer {
-    height: 60%;
+    height: 120%;
   }
 
   .gridFooter {
     gap: 0rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     height: 80%;
   }
 
   .navFooter h3 {
-    font-size: 25px;
+    margin-top: 2rem;
+    font-size: 55px;
   }
 
-  .navFooter p {
-    font-size: 15px;
-    margin-top: 1rem;
-  }
-
+  .navFooter p,
   .navFooter ul li {
+    font-size: 35px;
     margin-top: 1rem;
   }
 
   .iconsFooter {
-    font-size: 30px;
+    font-size: 60px;
+  }
+
+  .logoFooter {
+    left: 30%;
+    width: 30%;
   }
 
   .fondoFooter h3 {
-    font-size: 18px;
+    font-size: 25px;
   }
 }
 
