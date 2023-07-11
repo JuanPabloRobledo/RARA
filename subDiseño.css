@@ -83,24 +83,25 @@ header .logo {
 
     header.abajo {
         margin-top: 0rem;
+        border-radius: 0;
     }
 
-    .logo {
-        max-width: 10rem;
+    header .logo {
+        max-width: 15rem;
     }
 
     .abrir-menu,
     .cerrar-menu {
         display: block;
         border: 0;
-        font-size: 50px;
+        font-size: 80px;
         background-color: transparent;
         cursor: pointer;
     }
 
     .abrir-menu {
         color: #fff;
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .cerrar-menu {
@@ -137,10 +138,11 @@ header .logo {
     }
 
     .nav-list li a {
-        font-size: 20px;
+        font-size: 50px;
         color: #ecececec;
     }
 }
+
 
 /* ---------------BODY--------------------- */
 
@@ -160,6 +162,17 @@ header .logo {
     font-size: 30px;
     letter-spacing: .5rem;
     font-weight: 900;
+}
+
+@media screen and (max-width: 992px) {
+    .tituloEmisoras {
+        top: 15rem;
+    }
+
+    .tituloEmisoras h1 {
+        font-size: 80px;
+    }
+
 }
 
 /* floats redes */
@@ -212,6 +225,18 @@ header .logo {
     color: #666;
 }
 
+@media (max-width: 991px) {
+    .grids {
+        width: 120px;
+        height: 120px;
+    }
+
+    .grids .bx {
+        font-size: 70px;
+        top: 25%;
+    }
+}
+
 /* --------------- CARROUSEL ----------- */
 
 /* SLIDER */
@@ -242,20 +267,7 @@ header .logo {
 }
 
 
-.slider__btn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    border: none;
-    background: var(--color-primary);
-    font-family: inherit;
-    color: #fff;
-    height: 3rem;
-    width: 3rem;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
+.slider__btn,
 .slider__btn2 {
     position: absolute;
     top: 50%;
@@ -305,7 +317,6 @@ header .logo {
     cursor: pointer;
     transition: all 0.5s;
 }
-
 
 .dots__dot:last-child {
     margin: 0;
@@ -358,6 +369,71 @@ header .logo {
     border-radius: 10rem;
 }
 
+
+
+@media screen and (max-width: 992px) {
+    .slider {
+        max-width: 85rem;
+        height: 130vh;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+    }
+
+    .slider__btn,
+    .slider__btn2 {
+        z-index: 100000000000;
+        height: 5rem;
+        width: 5rem;
+        font-size: 3rem;
+    }
+
+    .slider__btn--left {
+        left: 10%;
+    }
+
+    .slider__btn--right {
+        right: 10%;
+    }
+
+    .dots {
+        bottom: 0%;
+        left: 50%;
+    }
+
+    .dots__dot {
+        height: .6rem;
+        width: .6rem;
+    }
+
+    .testimonial {
+        gap: 5rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 60%;
+        height: 60%;
+    }
+
+    .cardsRadios div {
+        width: 80%;
+        top: 0%;
+
+    }
+
+    .cardsRadios h1 {
+        border-radius: 0rem;
+        padding: 20px;
+        width: 20rem;
+        font-size: 30px;
+    }
+
+    .logoRadio {
+        border-radius: 20rem;
+        margin-bottom: 1rem;
+    }
+}
 
 /* FOOTER */
 footer {
@@ -466,6 +542,50 @@ p {
     transition: .3s;
 }
 
+@media screen and (max-width: 992px) {
+
+    footer {
+        height: 120%;
+    }
+
+    .gridFooter {
+        gap: 0rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1rem, 30rem, 30rem, 30rem, 20rem);
+        height: 80%;
+    }
+
+    .navFooter h3 {
+        margin-top: 2rem;
+        font-size: 45px;
+    }
+
+    .navFooter p,
+    .navFooter ul li {
+        color: rgb(211, 211, 211);
+        font-size: 35px;
+        font-weight: 400;
+        margin-top: 1rem;
+    }
+
+    .iconsFooter {
+        font-size: 60px;
+    }
+
+    .logoFooter {
+        top: 40%;
+        left: 5%;
+        width: 30%;
+    }
+
+    .fondoFooter {
+        height: 10rem;
+    }
+
+    .fondoFooter h3 {
+        font-size: 25px;
+    }
+}
 
 /* PAGINA BUENOS AIRES */
 .tituloProvincia {

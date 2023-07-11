@@ -787,18 +787,20 @@ p {
   .gridFooter {
     gap: 0rem;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3rem, 30rem, 30rem, 30rem, 30rem);
+    grid-template-rows: repeat(1rem, 30rem, 30rem, 30rem, 20rem);
     height: 80%;
   }
 
   .navFooter h3 {
     margin-top: 2rem;
-    font-size: 55px;
+    font-size: 45px;
   }
 
   .navFooter p,
   .navFooter ul li {
-    font-size: 40px;
+    color: rgb(211, 211, 211);
+    font-size: 35px;
+    font-weight: 400;
     margin-top: 1rem;
   }
 
@@ -810,6 +812,10 @@ p {
     top: 40%;
     left: 5%;
     width: 30%;
+  }
+
+  .fondoFooter {
+    height: 10rem;
   }
 
   .fondoFooter h3 {
