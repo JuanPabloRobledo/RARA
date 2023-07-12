@@ -1,7 +1,7 @@
 :root {
   --color-primary: #2661BF;
   --color-secondary: #D62222;
-  --color-tertiary: ;
+  --color-tertiary: linear-gradient(360deg, #000 0.43%, rgba(0, 0, 0, 0) 100%);
   --gradient-primary: #0F1218;
 }
 
