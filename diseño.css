@@ -860,6 +860,7 @@ p {
 /* MAPA */
 
 .mapa {
+  height: 120vh;
   width: 25%;
   margin: 0 auto;
 }
