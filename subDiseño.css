@@ -658,7 +658,7 @@ p {
 }
 
 .fondoSantafe {
-    background-image: url(img/FONDOS_PROVINCIAS/SANTAFE/fondo.jpg);
+    background-image: url(img/FONDOS_PROVINCIAS/SANTAFE/fondo\ .jpg);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -768,7 +768,7 @@ p {
 }
 
 .fondoTucuman {
-    background-image: url(img/FONDOS_PROVINCIAS/TUCUMAN/tucuman.png);
+    background-image: url(img/FONDOS_PROVINCIAS/TUCUMAN/tucuman.jpg);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -778,7 +778,7 @@ p {
 }
 
 .fondoSanluis {
-    background-image: url(img/FONDOS_PROVINCIAS/SANLUIS/san\ luis.png);
+    background-image: url(img/FONDOS_PROVINCIAS/SANLUIS/san\ luis.jpg);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
